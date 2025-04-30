@@ -1,19 +1,19 @@
-
-import { initializeApp, getApp, getApps} from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { initializeApp, getApp, getApps } from "firebase/app";
+import {getAuth} from "firebase/auth";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAKn9axBtJUJi1M_j-JWzHbiCXV30kZ6rQ",
-    authDomain: "mockmate-b6f62.firebaseapp.com",
-    projectId: "mockmate-b6f62",
-    storageBucket: "mockmate-b6f62.firebasestorage.app",
-    messagingSenderId: "682592440239",
-    appId: "1:682592440239:web:b0c83848383950a19e295a",
-    measurementId: "G-4BKCMBZ491"
+    apiKey: "AIzaSyBrrBm6PT7TSNgfXMQtfcUcPy4ys9m6w4o",
+    authDomain: "mockmate-c685a.firebaseapp.com",
+    projectId: "mockmate-c685a",
+    storageBucket: "mockmate-c685a.firebasestorage.app",
+    messagingSenderId: "240349294143",
+    appId: "1:240349294143:web:256047cec99d73682c528a",
+    measurementId: "G-ZDWTF544F6"
 };
 
-const app = !getApps.length ? initializeApp(firebaseConfig) : getApp();
+// Initialize Firebase
+const app =  !getApps.length ? initializeApp(firebaseConfig) : getApp();
 
 export const auth = getAuth(app);
 export const db = getFirestore(app);
